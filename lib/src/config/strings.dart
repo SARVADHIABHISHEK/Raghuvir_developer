@@ -58,6 +58,17 @@ class Strings {
   static const updateProfileButton = 'Update Profile';
   static const updatePasswordButton = 'Change Password';
 
+  ///Automation process
+  static const List<String> unitNumbers = [
+    "101",
+    "102",
+    "103",
+    "104",
+    "105",
+    "106",
+    "107",
+  ];
+
   ///Automation details
   static const List<String> projects = [
     "Testing Project",

@@ -103,4 +103,9 @@ class Palette {
   ///Login
   static const Color loginBgColor = Color(0xFFF3F3F8);
 
+
+  ///Automation process
+    static const Color automationYellow = Color(0xFFFFD602);
+
+
 }

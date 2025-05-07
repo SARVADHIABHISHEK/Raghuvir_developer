@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:raghuvir_developers/src/config/app_routers.dart';
-import 'package:raghuvir_developers/src/view/automationProcess/automation_process.dart';
+import 'package:raghuvir_developers/src/view/automation_data/automation_data.dart';
+import 'package:raghuvir_developers/src/view/automation_process/automation_process.dart';
 import 'package:raghuvir_developers/src/view/projects/project_list_view.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -37,7 +38,9 @@ class CustomDrawer extends StatelessWidget {
               _buildMenuItem(
                 Icons.settings_suggest_outlined,
                 'Automation Process',
-                onTap: () {},
+                onTap: () {
+                  Navigate.to(AutomationProcess());
+                },
               ),
               _buildMenuItem(
                 Icons.analytics_outlined,
