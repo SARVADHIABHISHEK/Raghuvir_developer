@@ -19,6 +19,7 @@ class _PossessionEnquiryState extends State<PossessionEnquiry> {
   Widget build(BuildContext context) {
     return Container(
       width: context.width,
+      height: context.height,
       decoration: BoxDecoration(
         color: Palette.white,
         borderRadius: BorderRadius.circular(12.0),
@@ -230,7 +231,6 @@ class _PossessionInquiryFormState extends State<PossessionInquiryForm> {
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-
         children: [
           Container(
             height: 50,
@@ -255,7 +255,7 @@ class _PossessionInquiryFormState extends State<PossessionInquiryForm> {
               ),
             ),
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: 20.0.h),
           Padding(
             padding: EdgeInsets.only(left: 10.0.w),
             child: Text(
@@ -275,6 +275,8 @@ class _PossessionInquiryFormState extends State<PossessionInquiryForm> {
             InquiryType.messageFromRaghuvir,
           ),
           buildRadioTile('Face - Face', InquiryType.faceToFace),
+
+          CustomSizedBox.h20,
         ],
       ),
     );
